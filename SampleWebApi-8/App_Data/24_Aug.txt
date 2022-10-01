@@ -1,0 +1,62 @@
+
+CR-2064
+Source:-10.118.133.52
+Destination:-10.118.12.15
+Port :- 22
+-----------------------------------
+CR-2066
+Source: 10.122.200.25
+Destination: 10.115.200.111
+Port: 8888
+-----------------------------------
+CR-2067
+1) Source: 10.116.200.29
+Destination: 10.115.200.111
+port: 8888
+
+2) Source: 10.117.200.29
+Destination: 10.115.200.111
+port: 8888
+-------------------------------------
+source to destination in DC ASA firewall
+1)Source:-10.115.133.71/72/73/74/77/78/55/56(DMZ servers),
+Destination:-10.115.200.93(Kibana Sever)
+
+2)Source:-10.115.23.21/22/25/26(Dms server)
+Destination:-10.115.200.93(Kibana Sever)
+
+3)Source:-10.115.200.75(syslog server),
+Destination:-10.115.200.93(Kibana Sever)
+
+
+Port:5044,5045,5046,5047,5048,5049
+
+--------------------------------------
+Kindly open connection for port 22 from droem01(10.117.200.17) to dcoem02(10.115.200.18).
+
+Reason: For copying software binaries from droem01 to dcoem02 for the purpose of DC upgradation from 13.3 to 13.4.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+CR-2019|Opned bidirectional Port from 10.118.200.56 to destination 10.118.133.52 in DR ASA firewall for transferring the software from NON DMZ to DMZ ||18/08/20
+CR-2023|Opened port for NAC devices configuration in DC ASA firewall ||18/08/20
+CR-2027|Opened port 8000 from Source:10.118.133.52 to destination 10.118.12.103 in DR ASA firewall||19/08/20
+CR-2028|Opned 8080 from Source:-10.121.133.57/58 destination 10.121.20.21 in DR ASA firewall ||19/08/20
+CR-2047|Opened port 22 from source 10.117.200.17 to destination 10.115.200.17 in DR and DC firewall.||20/08/20
+CR-2048|Opened port 1525 from source 10.118.133.52 to destination 10.118.19.21-27 in DR ASA firewall||21/08/20
+CR-2054|Temporary enable only TLS version 1.2 (Disabled 1.0 and 1.1)on B2B servers ||21/08/20
+
+INC-6174|Files gap observed in DMS DC DR sync||17/08/20
+INC-6183|Error observed in dc vnxstatus||18/08/20
+INC-6184|file gap observed for DC DR DMS File sync||18/08/20
+INC-6195|Observed NDR BSNL PRIMARY LINK STATUS is down as below Circuit id 3400005308 ||19/08/20
+INC-6196|Files gap observed inDC DR DMS file sync||19/08/20
+INC-6197|Error observed in vnxnas replication status ||19/08/20
+INC-6211|Files gap observed in dc dr DMS file sync||20/08/20
+INC-6212|Error observed in dc vnx status||20/08/20
+INC-6213|DCOVS04 Bond2 port, eth7 is not in LACP ||20/08/20
+INC-6235|DC - Filesystem C:\\ has 13.115% available space, fallen below warning (20) or critical (5) thresholdfor the host NETWORK-RDP.newindia.co.in ||21/08/20
+
+
+
+
+
